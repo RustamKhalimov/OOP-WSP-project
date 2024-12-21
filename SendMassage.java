@@ -6,6 +6,6 @@ public interface SendMassage {
 
     void sendComplain(String title,String importanceLevel,String complain,String date);
     
-    void readComplain(String complainTitle);
+
 
 }

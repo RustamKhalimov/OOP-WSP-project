@@ -42,12 +42,10 @@ public class Course {
         return type;
     }
 
-    // Метод для изменения типа курса
     public void setType(TypeOfCourse type) {
         this.type = type;
     }
 
-    // Метод для добавления преподавателя
     public void addInstructor(Teacher instructor) {
         this.instructors.add(instructor);
     }

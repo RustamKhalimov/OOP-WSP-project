@@ -1,8 +1,11 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Employee implements SendMassage{
@@ -141,27 +144,5 @@ public class Employee implements SendMassage{
 		}
     }
 
-	@Override
-	public void readComplain(String complainTitle) {
-		try (BufferedReader reader = new BufferedReader(new FileReader("Complain.txt"))) {
-            String line;
-            boolean complainFound = false;
 
-            while ((line = reader.readLine()) != null) {
-                String[] data = line.split(",");
-                if (data[0].equalsIgnoreCase(complainTitle)) { 
-                    System.out.println("Complain with title" + complainTitle + " :");
-                    System.out.printf("Importance Level: %s, complain: %s, date: %s%n", data[1], data[2] , data[3]);
-                    complainFound = true;
-                    break; 
-                }
-            }
-
-            if (!complainFound) {
-                System.out.println("Complain with title '" + complainTitle + "' not founded.");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-	}
 }
