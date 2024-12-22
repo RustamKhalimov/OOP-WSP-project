@@ -4,7 +4,7 @@ public interface SendMassage {
 
     void sendMessage(String title,String importanceLevel,String message,String date);
 
-    void sendComplain(String title,String importanceLevel,String complain,String date);
+    void sendComplain(String studentId,String title,String importanceLevel,String complain,String date);
     
 
 

@@ -1,0 +1,6 @@
+24B000003,Discrete Structures,Statistics,approved
+24B000004,Programming Principles 1,Programming Principles 2,denied
+24B000001,Calculus 1,Calculus 2,approved
+24B000002,Basic English,MPGE,approved
+24B000005,Discrete Structures,Statistics,approved
+24B000006,Discrete Structures,Statistics,approved

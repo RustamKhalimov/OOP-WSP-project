@@ -1,11 +1,9 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 
 public class Employee implements SendMassage{
@@ -23,10 +21,10 @@ public class Employee implements SendMassage{
         this.typeEmployee = typeEmployee;
     }
     
-    public void addNewStudentInfo(String newStudentName,String newStudentId , String newGPA) {
+    public void addNewStudentInfo(String newStudentId,String newStudentYearOfStudy,String newStudentFullName, String newGPA,String newStudentECTS) {
 		try {
 			 FileWriter writer = new FileWriter("StudentsName.txt",true);
-			 String newInfo = newStudentName + "," + newStudentId + "," + newGPA;
+			 String newInfo = newStudentId + "," + newStudentYearOfStudy + "," + newStudentFullName + "," + newGPA + "," + newStudentECTS;
 		        writer.append(newInfo + "\n");
 		        writer.close();
 		}
@@ -39,23 +37,23 @@ public class Employee implements SendMassage{
 		}
 	}
     
-    public void viewStudentsInfo(String studentName , String studentId) {
+    public void viewStudentsInfo(String studentId) {
         try (BufferedReader reader = new BufferedReader(new FileReader("StudentsName.txt"))) {
             String line;
             boolean studentFound = false;
 
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                if (data[0].equalsIgnoreCase(studentName) && data[1].equalsIgnoreCase(studentId)) { 
+                if (data[0].equalsIgnoreCase(studentId)) { 
                     System.out.println("Information about a student:");
-                    System.out.printf("Name: %s, ID: %s, GPA: %s%n", data[0], data[1], data[2]);
+                    System.out.printf("ID: %s,Year of study: %s,Full name: %s, GPA: %s, ECTS: %s%n", data[0], data[1], data[2], data[3], data[4]);
                     studentFound = true;
                     break; 
                 }
             }
 
             if (!studentFound) {
-                System.out.println("Student with name '" + studentName + "' not founded.");
+                System.out.println("Student not founded.");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -129,10 +127,10 @@ public class Employee implements SendMassage{
     }
 
     @Override
-    public void sendComplain(String title,String importanceLevel,String complain,String date) {
+    public void sendComplain(String studentId,String title,String importanceLevel,String complain,String date) {
     	try {
 			 FileWriter writer = new FileWriter("Complain.txt",true); 
-		        writer.append(title + "," + importanceLevel + "," + complain + "," + date + "\n");
+		        writer.append(studentId + "," + title + "," + importanceLevel + "," + complain + "," + date + "\n");
 		        writer.close();
 		}
 		catch (FileNotFoundException e) {

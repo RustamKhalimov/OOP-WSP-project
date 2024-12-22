@@ -1,0 +1,7 @@
+24B000001,1,Satai Beisenbaev,1.67,21
+24B000002,1,Alpamys Kaliev,3.67,21
+24B000003,1,Arsen Qalibek,3.00,21
+24B000004,1,Beibarys Alik,3.33,21
+24B000005,1,Sanzhar Serikbol,3.33,21
+24B000006,1,Aqniet Oralgazy,4.00,21
+24B000007,1,Temirlan Saptaikhan,2.88,21

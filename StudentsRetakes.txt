@@ -1,0 +1,6 @@
+24B000001,Calculus 1,0,Basic English,0,Discrete Structures,0,Programming Principles 1,0
+24B000002,Calculus 1,0,Basic English,0,Discrete Structures,0,Programming Principles 1,0
+24B000003,Calculus 1,0,Basic English,0,Discrete Structures,0,Programming Principles 1,0
+24B000004,Calculus 1,0,Basic English,0,Discrete Structures,0,Programming Principles 1,1
+24B000005,Calculus 1,0,Basic English,0,Discrete Structures,0,Programming Principles 1,0
+24B000006,Calculus 1,0,Basic English,0,Discrete Structures,0,Programming Principles 1,0

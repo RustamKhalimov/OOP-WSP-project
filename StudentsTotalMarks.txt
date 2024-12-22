@@ -1,0 +1,6 @@
+24B000001,Calculus 1,80.55,3.33,Basic English,84.50,3,Discrete Structures,72.90,3,Programming Principles 1,90.00,3
+24B000002,Calculus 1,75.35,3,Basic English,74.75,3,Discrete Structures,82.55,3,Programming Principles 1,100.00,3
+24B000003,Calculus 1,60.85,3,Basic English,90.30,3,Discrete Structures,88.90,3,Programming Principles 1,98.70,3
+24B000004,Calculus 1,40.35,3,Basic English,100.00,3,Discrete Structures,87.85,3,Programming Principles 1,88.20,3
+24B000005,Calculus 1,89.95,3,Basic English,94.05.50,3,Discrete Structures,92.55,3,Programming Principles 1,81.00,3
+24B000006,Calculus 1,100.00,3,Basic English,99.15,3,Discrete Structures,97.75,3,Programming Principles 1,98.60,3

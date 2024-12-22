@@ -1,0 +1,4 @@
+MATH1102,Calculus 1,4,6,MAJOR,Erimbet Meruert,2023-02-05
+CSCI1102,Discrete Structures,3,5,MAJOR,Bazarbaeva Larisa,2022-09-23
+LAN1182,Basic English,6,10,MAJOR,Batanova Zhuldiz,2022-11-14 
+CSCI1103,Programming Principles 1,4,6,MAJOR,Usykin Nikita,2022-12-31
