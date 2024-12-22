@@ -52,10 +52,10 @@ public class Manager extends Employee {
 		super.readMessage(massageTitle);
 	}
 	
-	public void assignCourse(String courseCode,String courseName,String credits,String ects ,String type,String instructor,String date) {
+	public void assignCourse(String courseCode,String courseName,String credits,String type,String instructor,String date) {
 		try {
 			 FileWriter writer = new FileWriter("Courses.txt",true);
-			 String newCourse = courseCode + "," + courseName + "," + credits + "," + ects + "," + type + "," + instructor + "," + date;
+			 String newCourse = courseCode + "," + courseName + "," + credits + "," + type + "," + instructor + "," + date;
 		        writer.append(newCourse + "\n");
 		        writer.close();
 		}

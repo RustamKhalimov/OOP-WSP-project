@@ -71,34 +71,30 @@ public class CheckEmployee {
 		 Manager manager = new Manager(typeEmployee, type);
 
 		//Assign course
-//	   System.out.println("Input course code");
-//	   String code = input.nextLine();
-//		 
-//	   System.out.println("Input course name");
-//       String name = input.nextLine();
-//       
-//       System.out.println("Input course credits");
-//       String credits = input.nextLine();
-//       
-//       System.out.println("Input course ECTS");
-//       String ects = input.nextLine();
-//       
-//       System.out.println("Input course type");
-//       String cType = input.nextLine();
-//       
-//       System.out.println("Input course instructor");
-//       String instructor = input.nextLine();
-//       
-//       LocalDateTime date = LocalDateTime.now();
-//	   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-//	   String formattedDate = date.format(formatter);   
-//       manager.assignCourse(code,name,credits,ects,cType,instructor,formattedDate);
+	   System.out.println("Input course code");
+	   String code = input.nextLine();
+		 
+	   System.out.println("Input course name");
+       String name = input.nextLine();
+       
+       System.out.println("Input course credits");
+       String credits = input.nextLine();
+       
+       System.out.println("Input course type");
+       String cType = input.nextLine();
+       
+       System.out.println("Input course instructor");
+       String instructor = input.nextLine();
+       
+       System.out.println("Input course date (Wd-hh-mm)");
+       String manualDate = input.nextLine();   
+       manager.assignCourse(code,name,credits,cType,instructor,manualDate);
 		 
 		 
 		 //Approve registration for course
-		 System.out.println("Input student ID");
-		 String id = input.nextLine();
-		 manager.approveRegistrationForCourse(id);
+//		 System.out.println("Input student ID");
+//		 String id = input.nextLine();
+//		 manager.approveRegistrationForCourse(id);
 		
 		
 		//-------------------------------
@@ -126,7 +122,7 @@ public class CheckEmployee {
 //        System.out.println("Enter student new mark :");
 //        String newMark = input.nextLine();
 //        
-//        teacher.updateMarks(id, Double.parseDouble(newMark));
+//        teacher.putMarks(id, Double.parseDouble(newMark));
 	}
 
 

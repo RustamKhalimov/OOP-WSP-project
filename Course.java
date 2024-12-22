@@ -52,7 +52,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return String.format("Курс: %s, Кредиты: %d, Тип: %s, Расписание: %s",
+        return String.format("Course: %s, Credits: %d, Type: %s, Schedule: %s",
                 nameOfCourse, credits, type, schedule);
     }
 }

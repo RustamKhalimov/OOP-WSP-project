@@ -40,7 +40,7 @@ public class Teacher extends Employee{
 
 
 	
-	public void updateMarks(String studentId, double newMark) {
+	public void putMarks(String studentId, double newMark) {
 	    List<String> updatedGPA = new ArrayList<>();
 	    List<String> updatedTotalGPA = new ArrayList<>();
 	    boolean studentFound = false;
