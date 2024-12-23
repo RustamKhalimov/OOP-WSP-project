@@ -7,9 +7,9 @@ public class Check {
         Scanner input = new Scanner(System.in);
         boolean running = true;
 
-        Employee emp = new Employee("Manager"); // Для работы с Employee
-        String typeEmployeeManager = "Manager"; // Для работы с Manager
-        String typeEmployeeTeacher = "Teacher"; // Для работы с Teacher
+        Employee emp = new Employee("Manager"); 
+        String typeEmployeeManager = "Manager"; 
+        String typeEmployeeTeacher = "Teacher"; 
 
         while (running) {
             System.out.println("\n=== Main Menu ===");
@@ -17,26 +17,26 @@ public class Check {
             System.out.println("2. Teacher Operations");
             System.out.println("3. Manager Operations");
             System.out.println("4. Exit");
-            System.out.print("Select who to work with: ");
+            System.out.print("Select who`s operations do you want to see: ");
             int choice = input.nextInt();
-            input.nextLine(); // Consume newline
-
+            input.nextLine(); 
             switch (choice) {
-                case 1: // Employee
+                case 1:
                     handleEmployeeOperations(emp, input);
                     break;
 
-                case 2: // Teacher
+                case 2: 
                     handleTeacherOperations(typeEmployeeTeacher, input);
                     break;
 
-                case 3: // Manager
+                case 3: 
                     handleManagerOperations(typeEmployeeManager, input);
                     break;
 
-                case 4: // Exit
+                case 4:
                     running = false;
                     System.out.println("Exiting...");
+                    System.out.println("Byeee");
                     break;
 
                 default:
@@ -59,7 +59,7 @@ public class Check {
             System.out.println("7. Back to Main Menu");
             System.out.print("Select an operation: ");
             int choice = input.nextInt();
-            input.nextLine(); // Consume newline
+            input.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -119,7 +119,7 @@ public class Check {
             System.out.println("5. Back to Main Menu");
             System.out.print("Select an operation: ");
             int choice = input.nextInt();
-            input.nextLine(); // Consume newline
+            input.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -127,7 +127,7 @@ public class Check {
                     String id = input.nextLine();
                     System.out.println("Enter new mark: ");
                     double mark = input.nextDouble();
-                    input.nextLine(); // Consume newline
+                    input.nextLine(); 
                     teacher.putMarks(id, mark);
                     break;
 
@@ -194,7 +194,7 @@ public class Check {
             System.out.println("5. Back to Main Menu");
             System.out.print("Select an operation: ");
             int choice = input.nextInt();
-            input.nextLine(); // Consume newline
+            input.nextLine();
 
             switch (choice) {
                 case 1:
