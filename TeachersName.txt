@@ -1,5 +1,5 @@
-Arnur,Kelgenbaev,PP2
-Meruert,Erimbet,Calculus
-Nikita,Usukin,PP1
-Larisa,Bazarbaeva,Linear Algebra
-Aibek,Kuralbaev,Data Base
+Arnur Kelgenbaev,PP2
+Meruert Erimbet,Calculus
+Nikita Usukin,PP1
+Larisa Bazarbaeva,Linear Algebra
+Aibek Kuralbaev,Data Base 

@@ -1,3 +1,3 @@
 Change GPA,LOW,Please change GPA of student with ID 23B000001,2024-12-11 19:11:17
 Change school name,HIGH,Please change school of student with ID 23B000002,2024-12-11 19:14:41
-Change student GPA,LOW,Plaese change Student(ID:23B000001) GPA to 2.69,2024-12-18 21:34:01
+Change GPA,LOW,Plaese change Student(ID:23B000001) GPA to 2.69,2024-12-18 21:34:01

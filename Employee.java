@@ -61,23 +61,23 @@ public class Employee implements SendMassage{
     }
 
     
-    public void viewTeacherInfo(String teacherName) {
+    public void viewTeacherInfo(String teacherFullName) {
     	try (BufferedReader reader = new BufferedReader(new FileReader("TeachersName.txt"))) {
             String line;
             boolean teacherFound = false;
 
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                if (data[0].equalsIgnoreCase(teacherName)) { 
+                if (data[0].equalsIgnoreCase(teacherFullName)) { 
                     System.out.println("Information about a teacher:");
-                    System.out.printf("Name: %s, Surname: %s, Decepline: %s%n", data[0], data[1], data[2]);
+                    System.out.printf("Full name: %s,Decepline: %s%n", data[0], data[1]);
                     teacherFound = true;
                     break; 
                 }
             }
 
             if (!teacherFound) {
-                System.out.println("Teacher with name '" + teacherName + "' not founded.");
+                System.out.println("Teacher " + teacherFullName + "' not founded.");
             }
         } catch (IOException e) {
             e.printStackTrace();
